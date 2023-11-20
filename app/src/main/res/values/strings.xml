@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PertemuanPertamaApp</string>
     <string name="panjang">Panjang</string>
+    <string name="aplikasi_latihan_intent">Aplikasi Latihan Intent</string>
 </resources>

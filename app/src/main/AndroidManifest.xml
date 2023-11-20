@@ -13,10 +13,7 @@
         android:theme="@style/Theme.PertemuanPertamaApp"
         tools:targetApi="31">
         <activity
-            android:name=".SIgnUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BalokActivity"
+            android:name=".ExplicitIntentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

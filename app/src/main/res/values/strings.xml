@@ -2,4 +2,13 @@
     <string name="app_name">PertemuanPertamaApp</string>
     <string name="panjang">Panjang</string>
     <string name="aplikasi_latihan_intent">Aplikasi Latihan Intent</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="move_with_data">Move with data</string>
+    <string name="move_with_parcelable_data">Move with parcelable data</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="pilih_angka">Pilih angka</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
 </resources>

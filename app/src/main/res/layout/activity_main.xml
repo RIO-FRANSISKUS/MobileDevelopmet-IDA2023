@@ -26,10 +26,77 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/primary_green"
-        android:text="Explicit Intent"
+        android:text="@string/explicit_intent"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_move_with_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary_green"
+        android:text="@string/move_with_data"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_explicit_intent" />
+
+    <Button
+        android:id="@+id/btn_move_with_data_parcelable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary_green"
+        android:text="@string/move_with_parcelable_data"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_with_data" />
+
+    <Button
+        android:id="@+id/btn_implicit_intent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary_green"
+        android:text="@string/implicit_intent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_with_data_parcelable" />
+
+
+    <Button
+        android:id="@+id/btn_move_for_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary_green"
+        android:text="@string/implicit_intent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_implicit_intent" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_move_for_result"
+        app:layout_constraintStart_toStartOf="@+id/btn_move_for_result"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_for_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

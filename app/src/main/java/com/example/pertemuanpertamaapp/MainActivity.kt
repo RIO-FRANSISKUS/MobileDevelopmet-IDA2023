@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -27,6 +28,12 @@ class MainActivity : AppCompatActivity() {
         rvHero.layoutManager = LinearLayoutManager(this)
         val listHeroAdapter = ListHeroAdapter(list)
         rvHero.adapter = listHeroAdapter
+
+        listHeroAdapter.setOnItemClickCallback(object : ListHeroAdapter.OnItemClickCallback{
+            override fun onItemClicked(data: Hero) {
+                showSelectedHero(data)
+            }
+        })
     }
 
     private fun getListHero(): ArrayList<Hero> {
@@ -42,4 +49,12 @@ class MainActivity : AppCompatActivity() {
         }
         return listHero
     }
+
+    private fun showSelectedHero(hero: Hero){
+        val intentDetailHero = Intent(this@MainActivity, DetailHeroActivity::class.java)
+        intentDetailHero.putExtra(DetailHeroActivity.EXTRA_KEY, hero)
+        startActivity(intentDetailHero)
+    }
+
+
 }
